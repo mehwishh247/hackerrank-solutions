@@ -2,7 +2,7 @@ You are given the firstname and lastname of a person on two different lines. You
 
 > Hello firstname lastname! You just delved into python.
 
-**Function Description**
+#### Function Description
 
 Complete the print_full_name function in the editor below.
 
@@ -11,23 +11,23 @@ print_full_name has the following parameters:
 - string first: the first name
 - string last: the last name
 
-**Prints**
+#### Prints
 
 - string: 'Hello  _firstname_ _lastname!_ You just delved into python' where _firstname_ and _lastname_ are replaced with _first_ and _last_.
 
-**Input Format**
+#### Input Format
 
 The first line contains the first name, and the second line contains the last name.
 
-**Constraints**
+#### Constraints
 The length of the first and last names are each ≤ **10**.
 
-**Sample Input 0**
+#### Sample Input 0
 > Ross
 > Taylor
 
-**Sample Output 0**
+#### Sample Output 0
 > Hello Ross Taylor! You just delved into python.
 
-**Explanation 0**
+#### Explanation 0
 The input read by the program is stored as a string data type. A string is a collection of characters.
