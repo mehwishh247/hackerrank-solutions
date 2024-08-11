@@ -23,8 +23,10 @@ The first line contains the first name, and the second line contains the last na
 The length of the first and last names are each ≤ **10**.
 
 #### Sample Input 0
-> Ross
-> Taylor
+````
+Ross
+Taylor
+````
 
 #### Sample Output 0
 > Hello Ross Taylor! You just delved into python.
