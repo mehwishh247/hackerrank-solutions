@@ -2,17 +2,18 @@
 Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
 
 ### Example
-*`arr = [1, 3, 5, 7, 9]`*
+ *__`arr`__* = __`[1, 3, 5, 7, 9]`__
 
-The minimum sum is `1 + 3 + 5 + 7 = 16` and the maximum sum is `3 + 5 + 7 + 9 = 24`. The function prints
+The minimum sum is __`1 + 3 + 5 + 7 = 16`__ and the maximum sum is __`3 + 5 + 7 + 9 = 24`__. The function prints
 ```
 16 24
 ```
 ### Function Description
-Complete the `miniMaxSum` function with the following parameter(s):
--  `arr[5]`: an array of `5` integers
+Complete the *__`miniMaxSum`__* function with the following parameter(s):
+-  *__`arr[5]`__*: an array of __`5`__ integers
 ### Print
-Print two space-separated integers on one line: the minimum sum and the maximum sum `4` of `5` of elements.No value should be returned.
+Print two space-separated integers on one line: the minimum sum and the maximum sum __`4`__ of 
+__`5`__ of elements.No value should be returned.
 
 *Note* For some languages, like C, C++, and Java, the sums may require that you use a long integer due
 to their size.
@@ -21,7 +22,7 @@ to their size.
 A single line of five space-separated integers.
 
 ### Constraints
-`1 ≤ arr[i] ≤ 100`
+- __*`1 ≤ arr[i]≤ 10^9`*__
 
 ### Sample Input
 ```
@@ -34,7 +35,7 @@ A single line of five space-separated integers.
 ```
 
 ### Explanation
-The numbers are `1, 2, 3, 4, and 5`. Calculate the following sums using four of the five integers:
+The numbers are __`1, 2, 3, 4, and 5`__. Calculate the following sums using four of the five integers:
 1. Sum everything except `1`, the sum is `2+3+4+5 = 14`.
 2. Sum everything except `2`, the sum is `1+3+4+5 = 13`.
 3. Sum everything except `3`, the sum is `1+2+4+5 = 12`.
