@@ -18,26 +18,12 @@ import sys
 #
 
 def kangaroo(x1, v1, x2, v2):
-    check = (max(x1, x2), max(v1, v2)) 
-    if check == (x1, v1) or check == (x2, v2):
-        print(check)
-        return 'NO'
+    if v1 == v2:
+        return 'YES' if x1 == x2 else 'NO'
         
-    flag_a = min(x1, x2)
-    flag_b = max(x1, x2)
-    
-    for i in range(1, 10001):
-        if flag_a > flag_b:
-            print(f"x1: {x1}, v1: {v1}, x2: {x2}, v2: {v2}")
-            return 'NO'
-            
-        if (v1 * i) + x1 == (v2 * i) + x2:
-            print(f"x1: {x1}, v1: {v1}, x2: {x2}, v2: {v2}")
-            return 'YES'
-            
+    if (x2 - x1) % (v1 - v2) == 0 and (x2 - x1) / (v1 - v2) >= 0:
+        return 'YES'
     return 'NO'
-        
-    
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
