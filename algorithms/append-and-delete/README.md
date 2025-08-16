@@ -99,19 +99,3 @@ No
 To convert *ashley* to *ash* a minimum of 3 steps are needed. Hence we print **No** as the answer.  
 
 ---
-
-## Python Solution
-```python
-def appendAndDelete(s, t, k):
-    index = 0
-    for i in range(min(len(s), len(t))):
-        if s[i] != t[i]:
-            break
-        index += 1
-
-    operations = (len(s) - index) + (len(t) - index)
-
-    if operations <= k and ((k - operations) % 2 == 0 or k >= len(s) + len(t)):
-        return "Yes"
-    return "No"
-```
